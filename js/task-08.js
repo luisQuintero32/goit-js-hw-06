@@ -1,16 +1,17 @@
-const form = document.querySelector('.login-form');
 
-form.addEventListener('submit', event => {
+const login = document.querySelector('.login-form');
+
+login.addEventListener('submit', event => {
   event.preventDefault();
   const datos = {};
-  for (const element of form.elements) {
+  for (const element of login.elements) {
     if (element.name) {
       datos[element.name] = element.value;
     }
   }
   if (datos.email && datos.password) {
     console.log(datos);
-    form.reset();
+    login.reset();
   } else {
     alert('campos vacios');
   }

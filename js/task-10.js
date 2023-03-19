@@ -4,7 +4,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 const controls = {
-  numberEl: document.querySelector('#controls').children[0],
+  number: document.querySelector('#controls').children[0],
   createButton: document.querySelector('#controls').children[1],
   destroyButton: document.querySelector('#controls').children[2],
 }
@@ -12,7 +12,7 @@ const controls = {
 const boxes = document.querySelector('#boxes')
 
 controls.createButton.addEventListener('click', () => {
-  createBoxes(controls.numberEl.value)
+  createBoxes(controls.number.value)
 });
 
 controls.destroyButton.addEventListener('click', () => {

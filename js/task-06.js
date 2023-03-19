@@ -14,3 +14,4 @@ function validateSymbol(){
         this.style.borderColor= '#f44336';
     }
 };
+console.log(amountsymbol);
